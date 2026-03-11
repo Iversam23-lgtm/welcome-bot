@@ -10,8 +10,9 @@
     "node": "20.x"
   },
   "dependencies": {
-    "discord.js": "^14.21.0",
-    "dotenv": "^16.4.5",
-    "skia-canvas": "^2.0.2"
-  }
+  "discord.js": "^14.21.0",
+  "dotenv": "^16.4.5",
+  "canvas": "^2.11.2"
+}
+
 }
