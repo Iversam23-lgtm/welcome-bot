@@ -1,0 +1,17 @@
+{
+  "name": "prevail-welcome-bot",
+  "version": "1.0.0",
+  "description": "Prevail welcome bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.4.5",
+    "skia-canvas": "^2.0.2"
+  }
+}
