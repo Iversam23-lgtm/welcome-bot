@@ -20,7 +20,7 @@ const client = new Client({
 const TOKEN = process.env.DISCORD_TOKEN;
 const WELCOME_CHANNEL_ID = process.env.WELCOME_CHANNEL_ID;
 
-const BACKGROUND = path.join(__dirname, 'assets', 'prevail.png');
+const BACKGROUND = require('path').resolve('./assets/prevail.png');
 
 async function createCard(member) {
 
@@ -99,3 +99,4 @@ client.on(Events.GuildMemberAdd, async member => {
 
 
 client.login(TOKEN);
+
