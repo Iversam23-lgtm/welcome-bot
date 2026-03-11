@@ -8,7 +8,7 @@ const {
   Events
 } = require('discord.js');
 
-const { Canvas, loadImage } = require('skia-canvas');
+const { createCanvas, loadImage } = require('canvas');
 
 const client = new Client({
   intents: [
@@ -27,7 +27,7 @@ async function createCard(member) {
   const width = 1050;
   const height = 500;
 
-  const canvas = new Canvas(width, height);
+  const canvas = createCanvas(width, height);
   const ctx = canvas.getContext("2d");
 
   const bg = await loadImage(BACKGROUND);
@@ -96,5 +96,6 @@ client.on(Events.GuildMemberAdd, async member => {
   });
 
 });
+
 
 client.login(TOKEN);
